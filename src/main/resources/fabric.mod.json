@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "backt-paper",
+	"version": "${version}",
+	"name": "BackT-Paper",
+	"description": "YO, this mood allows you to revert Empty maps back into paper for easier trading use!",
+	"authors": [
+		"Me, Robbie Mezazem!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/backt-paper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.robbie.paper.BackTPaper"
+		],
+		"fabric-datagen": [
+			"net.robbie.paper.BackTPaperDataGenerator"
+		],
+		"client": [
+			"net.robbie.paper.PaperClient"
+		]
+	},
+	"mixins": [
+		"backt-paper.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
